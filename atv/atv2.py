@@ -11,7 +11,7 @@ def registrar_t(tentativas):
             if t < 4 and t > -1:
                 tentativas.append(t)
             else:
-                print("\nValor inválido, tentativa será considrada como erro")
+                print("\nValor inválido, tentativa será considerada como erro")
                 tentativas.append(0)
     return tentativas
 

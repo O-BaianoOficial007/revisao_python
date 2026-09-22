@@ -32,7 +32,7 @@ def artilharia(gols, jogadores):
     return jogadores[index_art]
     
 while True:
-    print("1-Dados por jogador\n2-Media do Time\n3-Total de Gols\n4-Artilheiro\n5-Acima da Média\n6-Sair")
+    print("\n1-Dados por jogador\n2-Media do Time\n3-Total de Gols\n4-Artilheiro\n5-Acima da Média\n6-Sair\n")
     escolha = int(input("Digite o Número da opção que deseja:"))
                             
     if escolha == 1:
@@ -49,19 +49,19 @@ while True:
 
     elif escolha == 4:
         artilheiro = artilharia(gols, jogadores)
-        print(f"O artilheiro foi {artilheiro}")
+        print(f"\nO artilheiro foi {artilheiro}\n")
 
     elif escolha == 5:
         mais = maisqMedia(gols, jogadores)
         ind = len(mais)
         for i in range(0, ind):
-            print(mais[i])
+            print(f"\n{mais[i]}\n")
             
     elif escolha == 6:
         break
     
     else:
-        print("escolha uma opção válida")
+        print("\nescolha uma opção válida\n")
     
 
 
